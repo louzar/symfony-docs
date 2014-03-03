@@ -69,7 +69,7 @@ URL to see the diagnostics for your machine: http://localhost/Symfony/web/config
 Understanding the Fundamentals
 ------------------------------
 
-One of the main goals of a framework is to ensure `Separation of Concerns`_.
+One of the main goals of a framework is to ensure Separation of Concerns.
 This keeps your code organized and allows your application to evolve easily
 over time by avoiding the mixing of database calls, HTML tags, and business
 logic in the same script. To achieve this goal with Symfony, you'll first
@@ -80,24 +80,6 @@ The distribution comes with some sample code that you can use to learn more
 about the main Symfony2 concepts. Go to the following URL to be greeted by
 Symfony2 (replace *Fabien* with your first name):
 
-.. code-block:: text
-
-    http://localhost/app_dev.php/demo/hello/Fabien
-
-.. image:: /images/quick_tour/hello_fabien.png
-   :align: center
-
-What's going on here? Have a look at each part of the URL:
-
-* ``app_dev.php``: This is a :term:`front controller`. It is the unique entry
-  point of the application and it responds to all user requests;
-
-* ``/demo/hello/Fabien``: This is the *virtual path* to the resource the user
-  wants to access.
-
-Your responsibility as a developer is to write the code that maps the user's
-*request* (``/demo/hello/Fabien``) to the *resource* associated with it
-(the ``Hello Fabien!`` HTML page).
 
 Routing
 ~~~~~~~
