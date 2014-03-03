@@ -54,6 +54,8 @@ have a ``Symfony/`` directory that looks like this:
 The URL to your application will be:
 "http://localhost/Symfony/web/app_dev.php".
 
+.. image:: /images/quick_tour/welcome.png
+   :align: center
 
 Checking the Configuration
 --------------------------
@@ -67,8 +69,6 @@ URL to see the diagnostics for your machine:
 
 
 
-.. image:: /images/quick_tour/welcome.png
-   :align: center
 
 Understanding the Fundamentals
 ------------------------------
@@ -79,11 +79,6 @@ over time by avoiding the mixing of database calls, HTML tags, and business
 logic in the same script. To achieve this goal with Symfony, you'll first
 need to learn a few fundamental concepts and terms.
 
-.. tip::
-
-    Want proof that using a framework is better than mixing everything
-    in the same script? Read the ":doc:`/book/from_flat_php_to_symfony2`"
-    chapter of the book.
 
 The distribution comes with some sample code that you can use to learn more
 about the main Symfony2 concepts. Go to the following URL to be greeted by
@@ -112,7 +107,7 @@ Routing
 ~~~~~~~
 
 Symfony2 routes the request to the code that handles it by trying to match the
-requested URL (i.e. the virtual path) against some configured paths. By default,
+requested URL, against some configured paths. By default,
 these paths (called routes) are defined in the ``app/config/routing.yml`` configuration
 file. When you're in the ``dev`` :ref:`environment<quick-tour-big-picture-environments>` -
 indicated by the app_**dev**.php front controller - the ``app/config/routing_dev.yml``
@@ -149,19 +144,11 @@ when the user requests the "``/``" resource (i.e. the welcome page you saw
 earlier). When requested, the ``AcmeDemoBundle:Welcome:index`` controller
 will be executed. In the next section, you'll learn exactly what that means.
 
-.. tip::
-
-    The Symfony2 Standard Edition uses :doc:`YAML</components/yaml/yaml_format>`
-    for its configuration files, but Symfony2 also supports XML, PHP, and
-    annotations natively. The different formats are compatible and may be
-    used interchangeably within an application. Also, the performance of
-    your application does not depend on the configuration format you choose
-    as everything is cached on the very first request.
 
 Controllers
 ~~~~~~~~~~~
 
-A controller is a fancy name for a PHP function or method that handles incoming
+A controller is a name for a PHP function or method that handles incoming
 *requests* and returns *responses* (often HTML code). Instead of using the
 PHP global variables and functions (like ``$_GET`` or ``header()``) to manage
 these HTTP messages, Symfony uses objects: :ref:`Request<component-http-foundation-request>`
