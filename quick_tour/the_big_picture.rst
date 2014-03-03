@@ -49,30 +49,11 @@ have a ``Symfony/`` directory that looks like this:
 
 .. _`quick-tour-big-picture-built-in-server`:
 
-If you have PHP 5.4, you can use the built-in web server:
 
-.. code-block:: bash
 
-    # check your PHP CLI configuration
-    $ php app/check.php
-
-    # run the built-in web server
-    $ php app/console server:run
-
-Then the URL to your application will be "http://localhost:8000/app_dev.php"
-
-The built-in server should be used only for development purpose, but it
-can help you to start your project quickly and easily.
-
-If you're using a traditional web server like Apache, your URL depends on
-your configuration. If you've unzipped Symfony under your web root into a
-``Symfony`` directory, then the URL to your application will be:
+The URL to your application will be:
 "http://localhost/Symfony/web/app_dev.php".
 
-.. note::
-
-    Read more in our :doc:`/cookbook/configuration/web_server_configuration`
-    section.
 
 Checking the Configuration
 --------------------------
@@ -82,29 +63,9 @@ headaches that come from Web server or PHP misconfiguration. Use the following
 URL to see the diagnostics for your machine:
 
 .. code-block:: text
+ ``http://localhost/Symfony/web/config.php``
 
-    http://localhost/config.php
 
-.. note::
-
-    All of the example URLs assume you've setup your web server to point
-    directly to the ``web/`` directory of your new project, which is different
-    and a bit more advanced than the process shown above. So, the URL on your
-    machine will vary - e.g. ``http://localhost:8000/config.php``
-    or ``http://localhost/Symfony/web/config.php``. See the
-    :ref:`above section<quick-tour-big-picture-built-in-server>` for details
-    on what your URL should be and use it below in all of the examples.
-
-If there are any outstanding issues listed, correct them. You might also tweak
-your configuration by following any given recommendations. When everything is
-fine, click on "*Bypass configuration and go to the Welcome page*" to request
-your first "real" Symfony2 webpage:
-
-.. code-block:: text
-
-    http://localhost/app_dev.php/
-
-Symfony2 should welcome and congratulate you for your hard work so far!
 
 .. image:: /images/quick_tour/welcome.png
    :align: center
