@@ -76,11 +76,6 @@ logic in the same script. To achieve this goal with Symfony, you'll first
 need to learn a few fundamental concepts and terms.
 
 
-The distribution comes with some sample code that you can use to learn more
-about the main Symfony2 concepts. Go to the following URL to be greeted by
-Symfony2 (replace *Fabien* with your first name):
-
-
 Routing
 ~~~~~~~
 
