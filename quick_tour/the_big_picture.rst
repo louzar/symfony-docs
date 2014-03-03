@@ -62,7 +62,7 @@ Symfony2 comes with a visual server configuration tester to help avoid some
 headaches that come from Web server or PHP misconfiguration. Use the following
 URL to see the diagnostics for your machine:
 
-.. code-block:: text
+
  ``http://localhost/Symfony/web/config.php``
 
 
