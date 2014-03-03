@@ -253,11 +253,6 @@ The ``@Route()`` annotation defines a new route with a path of
 string enclosed in curly brackets like ``{name}`` is called a placeholder. As
 you can see, its value can be retrieved through the ``$name`` method argument.
 
-.. note::
-
-    Even if annotations are not natively supported by PHP, you can use them
-    in Symfony2 as a convenient way to configure the framework behavior and
-    keep the configuration next to the code.
 
 If you take a closer look at the controller code, you can see that instead of
 rendering a template and returning a ``Response`` object like before, it
@@ -267,11 +262,7 @@ to the template. The name of the template that's rendered follows the name
 of the controller. So, in this example, the ``AcmeDemoBundle:Demo:hello.html.twig``
 template is rendered (located at ``src/Acme/DemoBundle/Resources/views/Demo/hello.html.twig``).
 
-.. tip::
 
-    The ``@Route()`` and ``@Template()`` annotations are more powerful than
-    the simple examples shown in this tutorial. Learn more about "`annotations in controllers`_"
-    in the official documentation.
 
 Templates
 ~~~~~~~~~
@@ -303,7 +294,7 @@ bundles. In Symfony2 speak, a bundle is a structured set of files (PHP files,
 stylesheets, JavaScripts, images, ...) that implements a single feature (a
 blog, a forum, ...) and which can be easily shared with other developers. As
 of now, you have manipulated one bundle, AcmeDemoBundle. You will learn
-more about bundles in the :doc:`last chapter of this tutorial</quick_tour/the_architecture>`.
+more about bundles in the :doc:`last chapter of this tutorial`.
 
 .. _quick-tour-big-picture-environments:
 
@@ -331,7 +322,7 @@ Symfony2 debugging tool: the profiler.
     on the Web Debug Toolbar, or clicking them to go to their respective
     pages in the profiler.
 
-When loaded and enabled (by default in the ``dev`` :ref:`environment<quick-tour-big-picture-environments-intro>`),
+When loaded and enabled (by default in the ``dev``,
 the Profiler provides a web interface for a *huge* amount of information recorded
 on each request, including logs, a timeline of the request, GET or POST parameters,
 security details, database queries and more!
@@ -342,70 +333,3 @@ environment.
 
 .. _quick-tour-big-picture-environments-intro:
 
-So what *is* an environment? An :term:`Environment` is a simple string (e.g.
-``dev`` or ``prod``) that represents a group of configuration that's used
-to run your application.
-
-Typically, you put your common configuration in ``config.yml`` and override
-where necessary in the configuration for each environment. For example:
-
-.. code-block:: yaml
-
-    # app/config/config_dev.yml
-    imports:
-        - { resource: config.yml }
-
-    web_profiler:
-        toolbar: true
-        intercept_redirects: false
-
-In this example, the ``dev`` environment loads the ``config_dev.yml`` configuration
-file, which itself imports the global ``config.yml`` file and then modifies it by
-enabling the web debug toolbar.
-
-When you visit the ``app_dev.php`` file in your browser, you're executing
-your Symfony application in the ``dev`` environment. To visit your application
-in the ``prod`` environment, visit the ``app.php`` file instead. The demo
-routes in our application are only available in the ``dev`` environment, but
-if those routes were available in the ``prod`` environment, you would be able
-to visit them in the ``prod`` environment by going to:
-
-.. code-block:: text
-
-    http://localhost/app.php/demo/hello/Fabien
-
-If instead of using php's built-in webserver, you use Apache with ``mod_rewrite``
-enabled and take advantage of the ``.htaccess`` file Symfony2 provides
-in ``web/``, you can even omit the ``app.php`` part of the URL. The default
-``.htaccess`` points all requests to the ``app.php`` front controller:
-
-.. code-block:: text
-
-    http://localhost/demo/hello/Fabien
-
-.. note::
-
-    Note that the two URLs above are provided here only as **examples** of
-    how a URL looks like when the ``prod`` front controller is used. If you
-    actually try them in an out-of-the-box installation of *Symfony Standard Edition*,
-    you will get a 404 error since the *AcmeDemoBundle* is enabled only in
-    the ``dev`` environment and its routes imported from ``app/config/routing_dev.yml``.
-
-For more details on environments, see ":ref:`Environments & Front Controllers<page-creation-environments>`".
-
-Final Thoughts
---------------
-
-Congratulations! You've had your first taste of Symfony2 code. That wasn't so
-hard, was it? There's a lot more to explore, but you should already see how
-Symfony2 makes it really easy to implement web sites better and faster. If you
-are eager to learn more about Symfony2, dive into the next section:
-":doc:`The View<the_view>`".
-
-.. _Symfony2 Standard Edition:      http://symfony.com/download
-.. _Symfony in 5 minutes:           http://symfony.com/symfony-in-five-minutes
-.. _`Composer`:                     http://getcomposer.org/
-.. _Separation of Concerns:         http://en.wikipedia.org/wiki/Separation_of_concerns
-.. _annotations in controllers:     http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html#annotations-for-controllers
-.. _Twig:                           http://twig.sensiolabs.org/
-.. _`Symfony Installation Page`:    http://symfony.com/download
