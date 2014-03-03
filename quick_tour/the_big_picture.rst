@@ -82,7 +82,7 @@ Routing
 Symfony2 routes the request to the code that handles it by trying to match the
 requested URL, against some configured paths. By default,
 these paths (called routes) are defined in the ``app/config/routing.yml`` configuration
-file. When you're in the `dev`-
+file. When you're in the dev
 indicated by the app_dev.php front controller - the ``app/config/routing_dev.yml``
 configuration file is also loaded. In the Standard Edition, the routes to
 these "demo" pages are imported from this file:
