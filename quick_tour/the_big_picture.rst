@@ -1,17 +1,6 @@
 The Big Picture
 ===============
 
-Start using Symfony2 in 10 minutes! This chapter will walk you through some
-of the most important concepts behind Symfony2 and explain how you can get
-started quickly by showing you a simple project in action.
-
-If you've used a web framework before, you should feel right at home with
-Symfony2. If not, welcome to a whole new way of developing web applications!
-
-.. tip::
-
-    Want to learn why and when you need to use a framework? Read the "`Symfony
-    in 5 minutes`_" document.
 
 Downloading Symfony2
 --------------------
