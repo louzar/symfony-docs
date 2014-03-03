@@ -151,8 +151,8 @@ Controllers
 A controller is a name for a PHP function or method that handles incoming
 *requests* and returns *responses* (often HTML code). Instead of using the
 PHP global variables and functions (like ``$_GET`` or ``header()``) to manage
-these HTTP messages, Symfony uses objects: :ref:`Request<component-http-foundation-request>`
-and :ref:`Response<component-http-foundation-response>`. The simplest possible
+these HTTP messages, Symfony uses objects: 
+and :. The simplest possible
 controller might create the response by hand, based on the request::
 
     use Symfony\Component\HttpFoundation\Response;
@@ -164,12 +164,7 @@ controller might create the response by hand, based on the request::
 .. versionadded:: 2.4
     Support for HTTP status code constants was added in Symfony 2.4.
 
-.. note::
 
-    Symfony2 embraces the HTTP Specification, which are the rules that govern
-    all communication on the Web. Read the ":doc:`/book/http_fundamentals`"
-    chapter of the book to learn more about this and the added power that
-    this brings.
 
 Symfony2 chooses the controller based on the ``_controller`` value from the
 routing configuration: ``AcmeDemoBundle:Welcome:index``. This string is the
@@ -198,7 +193,7 @@ the ``Acme\DemoBundle\Controller\WelcomeController`` class::
 
 The ``WelcomeController`` class extends the built-in ``Controller`` class,
 which provides useful shortcut methods, like the
-:ref:`render()<controller-rendering-templates>` method that loads and renders
+ method that loads and renders
 a template (``AcmeDemoBundle:Welcome:index.html.twig``). The returned value
 is a Response object populated with the rendered content. So, if the need
 arises, the Response can be tweaked before it is sent to the browser::
