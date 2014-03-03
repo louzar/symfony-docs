@@ -8,19 +8,10 @@ Downloading Symfony2
 First, check that you have installed and configured a Web server (such as
 Apache) with PHP 5.3.3 or higher.
 
-.. tip::
 
-    If you have PHP 5.4, you could use the built-in web server to start trying
-    things out. We'll tell you how to start the built-in web server
-    :ref:`after downloading Symfony<quick-tour-big-picture-built-in-server>`.
+Start by downloading the "`Symfony2 Standard Edition`_": 
 
-Ready? Start by downloading the "`Symfony2 Standard Edition`_": a Symfony
-:term:`distribution` that is preconfigured for the most common use cases and
-also contains some code that demonstrates how to use Symfony2 (get the archive
-with the *vendors* included to get started even faster).
-
-After unpacking the archive under your web server root directory (if you'll
-use the built-in PHP web server, you can unpack it anywhere), you should
+After unpacking the archive under your web server root directory, you should
 have a ``Symfony/`` directory that looks like this:
 
 .. code-block:: text
