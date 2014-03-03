@@ -9,7 +9,7 @@ First, check that you have installed and configured a Web server (such as
 Apache) with PHP 5.3.3 or higher.
 
 
-Start by downloading the "`Symfony2 Standard Edition`_": 
+Start by downloading the Symfony2 Standard Edition: 
 
 After unpacking the archive under your web server root directory, you should
 have a ``Symfony/`` directory that looks like this:
@@ -40,7 +40,7 @@ have a ``Symfony/`` directory that looks like this:
 
 .. note::
 
-    If you are familiar with `Composer`_, you can download Composer and then
+    If you are familiar with Composer, you can download Composer and then
     run the following command instead of downloading the archive:
 
     .. code-block:: bash
@@ -52,7 +52,7 @@ have a ``Symfony/`` directory that looks like this:
 
 
 The URL to your application will be:
-"http://localhost/Symfony/web/app_dev.php".
+http://localhost/Symfony/web/app_dev.php.
 
 .. image:: /images/quick_tour/welcome.png
    :align: center
@@ -62,11 +62,7 @@ Checking the Configuration
 
 Symfony2 comes with a visual server configuration tester to help avoid some
 headaches that come from Web server or PHP misconfiguration. Use the following
-URL to see the diagnostics for your machine:
-
-
- ``http://localhost/Symfony/web/config.php``
-
+URL to see the diagnostics for your machine: http://localhost/Symfony/web/config.php
 
 
 
