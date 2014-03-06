@@ -1,9 +1,6 @@
 The Controller
 ==============
 
-Still here after the first two parts? You are already becoming a Symfony2
-addict! Without further ado, discover what controllers can do for you.
-
 Using Formats
 -------------
 
