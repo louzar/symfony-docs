@@ -1,25 +1,8 @@
 The View
 ========
 
-After reading the first part of this tutorial, you have decided that Symfony2
-was worth another 10 minutes. Great choice! In this second part, you will
-learn more about the Symfony2 template engine, `Twig`_. Twig is a flexible,
-fast, and secure template engine for PHP. It makes your templates more
-readable and concise; it also makes them more friendly for web designers.
-
-.. note::
-
-    Instead of Twig, you can also use :doc:`PHP </cookbook/templating/PHP>`
-    for your templates. Both template engines are supported by Symfony2.
-
 Getting familiar with Twig
 --------------------------
-
-.. tip::
-
-    If you want to learn Twig, it's highly recommended you read its official
-    `documentation`_. This section is just a quick overview of the main
-    concepts.
 
 A Twig template is a text file that can generate any type of content (HTML,
 XML, CSV, LaTeX, ...). Twig defines two kinds of delimiters:
