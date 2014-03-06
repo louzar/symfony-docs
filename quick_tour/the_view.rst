@@ -66,11 +66,6 @@ variable with the dot (``.``) notation:
     {# pass arguments to a method #}
     {{ user.date('Y-m-d') }}
 
-.. note::
-
-    It's important to know that the curly braces are not part of the variable
-    but the print statement. If you access variables inside tags don't put the
-    braces around.
 
 Decorating Templates
 --------------------
