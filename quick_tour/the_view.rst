@@ -63,9 +63,6 @@ variable with the dot (``.``) notation:
     {{ user.name }}
     {{ user.getName }}
 
-    {# force method name lookup #}
-    {{ user.name() }}
-    {{ user.getName() }}
 
     {# pass arguments to a method #}
     {{ user.date('Y-m-d') }}
