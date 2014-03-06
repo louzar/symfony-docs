@@ -196,11 +196,4 @@ built-in reverse proxy with Varnish or Squid and easily scale your application.
     via Edge Side Includes (ESI), which are supported natively. Learn more by
     reading the ":doc:`/book/http_cache`" chapter of the book.
 
-Final Thoughts
---------------
 
-That's all there is to it, and I'm not even sure you'll have spent the full
-10 minutes. You were briefly introduced to bundles in the first part, and all the
-features you've learned about so far are part of the core framework bundle.
-But thanks to bundles, everything in Symfony2 can be extended or replaced.
-That's the topic of the :doc:`next part of this tutorial<the_architecture>`.
